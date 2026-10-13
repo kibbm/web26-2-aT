@@ -4,7 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>5. 위치 속성</title>
-    
+    <style>
+        /*[예제6-37]left속성과 top속성 적용하기*/
+        .box {
+            width: 100px;   height: 100px;
+            position: absolute;
+        }
+
+        .box:nth-of-type(1) {
+            background-color: red;
+            left: 10px;      top: 10px;
+            z-index: 100;
+        }
+
+        .box:nth-of-type(2) {
+            background-color: green;
+            left: 50px;      top: 50px;
+            z-index: 50;
+        }
+
+        .box:nth-of-type(3) {
+            background-color: blue;
+            left: 90px;    top: 90px;
+            z-index: 10;
+        }
+
+        /*[예제6-38]position_formulaHeight*/
+        body > div{
+            width:400px; height:100px;
+            border:3px solid black;
+            position:relative;
+            /*overflow:hidden; [예제6-40]1.hidden: 영역을 벗어나는 부분 감춤*/
+            /*overflow:scroll; [예제6-41]2. scroll: 영역을 벗어나는 부분 스크롤바 표시*/
+            overflow-y:scroll; /*[예제6-42]overflow-x와 overflow-y 속성 적용하기*/
+
+        }
+    </style>
 </head>
 
 <body>   

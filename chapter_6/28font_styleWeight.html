@@ -3,7 +3,33 @@
 <head>
     <meta charset="UTF-8">    
     <title>4. 글자 속성</title>
-    
+    <style>      
+        /*[예제6-28]글자의 스타일과 굵기 조정*/
+        .font_big{ font-size: 2em; }
+        .font_italic{ font-style: italic; }
+        .font_bold{ font-weight: bold; }
+
+        /*[예제6-29]글자 정렬*/
+        /*[예제6-30]text-align속성을 사용할 때 주의사항*/
+        .font_center{ text-align: center; }
+        .font_right{ text-align: right; }
+
+        /*[예제6-31]글자를 수직 중앙 정렬 (간단한 버튼 만들기)*/
+        .button {
+            width:150px; height:70px;
+            background-color: #FF6A00;
+            border: 10px solid #FFFFFF;
+            border-radius: 30px;
+            box-shadow:5px 5px 5px #A9A9A9;
+        }
+        .button>a{
+            display: block;
+            line-height: 70px; /*[예제6-32]버튼 높이와 동일하게 지정하면 글자가 수직 중앙 정렬됩니다.*/
+        }
+
+        /*[예제6-33]링크 글자의 밑줄 제거*/
+        a{  text-decoration: none;}
+    </style>
 </head>
 <body>
     <h2>6.4.2 글자 스타일과 두께(예제6-28)</h2>
